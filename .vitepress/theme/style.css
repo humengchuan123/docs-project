@@ -137,3 +137,7 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* Search Result Highlight */
+.search-result .highlight {
+  background-color: yellow;
+}

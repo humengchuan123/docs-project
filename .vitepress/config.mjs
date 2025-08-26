@@ -2,24 +2,71 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-26 11:20:55
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-08-26 11:52:00
+ * @LastEditTime: 2025-08-26 17:04:10
  * @FilePath: \project\work-tool\docs-vitepress\.vitepress\config.mjs
  * @Description: 
  */
 import { defineConfig } from 'vitepress'
+import { SearchPlugin } from 'vitepress-plugin-search';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "mengchuanの开发文档",
   description: "A VitePress Site",
+  locales: {
+    '/': { lang: 'en-US', title: 'English Docs', description: 'English documentation' },
+    '/zh/': { lang: 'zh-CN', title: '中文文档', description: '中文文档说明' },
+    // 添加更多语言...
+  },
   themeConfig: {
+    logo: {
+      light: '/book.png',
+      dark: '/book-dark.png'
+    },
+    search: {
+      provider: 'local',
+      options: {
+        previewLength: 62,
+        buttonLabel: '搜索',
+        placeholder: '请输入关键词',
+        // 如果需要针对不同语言的页面进行过滤，可以使用 allow 和 ignore 选项
+        allow: ['/zh/', '/ja/'],
+        ignore: [],
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+
+      }
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '示例', link: '/markdown-examples' },
-      { text: '开发学习', link: '/development' },
+      { text: '示例', 
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: '开发学习', link: '/development' },
+          { text: 'NodeJS文档', link: '/node-learn' },
+        ]
+      },
+      // { text: '开发学习', link: '/development' },
       // { text: '项目文档', link: '/api-project' },
-      { text: 'NodeJS文档', link: '/node-learn' },
+      // { text: 'NodeJS文档', link: '/node-learn' },
       { text: '日本語の勉強', link: '/japanese' }
     ],
 
@@ -60,5 +107,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
-  }
+  },
+  plugins: [SearchPlugin()]
 })
