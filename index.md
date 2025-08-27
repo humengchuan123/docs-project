@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "学习开发文档123"
-  text: "keep going"
+  name: "学习开发文档"
+  text: "keep going, 作出改变"
   tagline: 书山有路勤为径，学海无涯苦作舟
   image:
     src: /car-bg-01.png
