@@ -1,18 +1,7 @@
-<!--
- * @Author: humengchuan 531537052@qq.com
- * @Date: 2025-08-26 11:38:06
- * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-08-26 12:49:11
- * @FilePath: \project\work-tool\docs-vitepress\Japanese.md
- * @Description:
--->
-
 ---
-
 lang: ja-JP
 title: 日本語ドキュメントのタイトル
 description: このページは日本語で書かれています。
-
 ---
 
 # Japanese learn docs

@@ -2,7 +2,7 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-26 11:20:55
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-08-26 17:04:10
+ * @LastEditTime: 2025-08-27 11:56:49
  * @FilePath: \project\work-tool\docs-vitepress\.vitepress\config.mjs
  * @Description: 
  */
@@ -13,6 +13,9 @@ import { SearchPlugin } from 'vitepress-plugin-search';
 export default defineConfig({
   title: "mengchuanの开发文档",
   description: "A VitePress Site",
+  head: [
+    ['link', { rel: 'icon',  href: '/favicon.ico' }]
+  ],
   locales: {
     '/': { lang: 'en-US', title: 'English Docs', description: 'English documentation' },
     '/zh/': { lang: 'zh-CN', title: '中文文档', description: '中文文档说明' },
@@ -100,6 +103,10 @@ export default defineConfig({
         text: 'Japanese',
         items: [
           { text: '日本語の勉強', link: '/japanese' },
+          { text: '影子跟读', link: '/janpan-shadow-reading' },
+          { text: '词汇', link: '/janpan-words' },
+          { text: '文法', link: '/janpan-grammar' },
+          { text: '听力', link: '/janpan-listening' },
         ]
       },
     ],
