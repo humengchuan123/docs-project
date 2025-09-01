@@ -2,7 +2,7 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-26 11:20:55
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-08-27 11:56:49
+ * @LastEditTime: 2025-08-28 14:40:18
  * @FilePath: \project\work-tool\docs-vitepress\.vitepress\config.mjs
  * @Description: 
  */
@@ -97,6 +97,12 @@ export default defineConfig({
         text: 'NodeJS',
         items: [
           { text: 'NodeJS', link: '/node-learn' },
+          { text: 'Express&Koa', link: '/src/nodejs/express' },
+          { text: 'Nest', link: '/src/nodejs/nest' },
+          { text: 'Mysql', link: '/src/nodejs/mysql' },
+          { text: 'Mongodb', link: '/src/nodejs/mongodb' },
+          { text: 'Redis', link: '/src/nodejs/redis' },
+          { text: '面试题', link: '/src/nodejs/interview' },
         ]
       },
       {

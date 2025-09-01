@@ -1,12 +1,3 @@
-<!--
- * @Author: humengchuan 531537052@qq.com
- * @Date: 2025-08-26 11:36:40
- * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-08-26 18:39:51
- * @FilePath: \project\work-tool\docs-vitepress\development.md
- * @Description:
--->
-
 # 开发文档
 
 ### 标签说明
@@ -46,3 +37,5 @@ head: 自定义头部信息，比如添加 meta 标签或者 link 标签。
 editLink: 控制是否显示编辑此页链接。
 lastUpdated: 显示最后更新时间。
 outline: 控制目录（大纲）是否显示以及其标题。
+
+![替代文字](./public/car-bg-01.png)
