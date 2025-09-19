@@ -1,3 +1,12 @@
+<!--
+ * @Author: humengchuan 531537052@qq.com
+ * @Date: 2025-08-28 14:37:43
+ * @LastEditors: humengchuan 531537052@qq.com
+ * @LastEditTime: 2025-09-10 15:09:33
+ * @FilePath: \project\work-tool\docs-vitepress\src\nodejs\mongodb.md
+ * @Description:
+-->
+
 ### mongodb
 
 [mongoose 文档](https://mongoosejs.com/docs/documents.html)  
@@ -43,3 +52,5 @@ mongoose.connection.on("error", (err) => {
 
 mongoose 使用  
 mongoose.Schema 创建集合
+
+mongodb 数据库上线流程： ① 本地导出数据库 ② 服务器安装 mongodb 环境 ③ 导入对应的数据库文件 ④ 启动服务
