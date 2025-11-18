@@ -2,7 +2,7 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-26 11:20:55
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-08-28 14:40:18
+ * @LastEditTime: 2025-11-17 12:19:49
  * @FilePath: \project\work-tool\docs-vitepress\.vitepress\config.mjs
  * @Description: 
  */
@@ -65,6 +65,7 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' },
           { text: '开发学习', link: '/development' },
           { text: 'NodeJS文档', link: '/node-learn' },
+          { text: 'CI/CD', link: '/src/build-story/jenkins' },
         ]
       },
       // { text: '开发学习', link: '/development' },
@@ -103,6 +104,16 @@ export default defineConfig({
           { text: 'Mongodb', link: '/src/nodejs/mongodb' },
           { text: 'Redis', link: '/src/nodejs/redis' },
           { text: '面试题', link: '/src/nodejs/interview' },
+        ]
+      },
+      {
+        text: 'CI/CD',
+        items: [
+          { text: 'Jenkins', link: '/src/build-story/jenkins' },
+          { text: 'Docker', link: '/src/build-story/docker' },
+          { text: 'Git', link: '/src/build-story/git' },
+          { text: 'Gitlab', link: '/src/build-story/gitlab' },
+          { text: 'Github', link: '/src/build-story/github' },
         ]
       },
       {
