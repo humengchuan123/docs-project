@@ -2,7 +2,7 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-11-17 12:11:51
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-11-18 23:14:31
+ * @LastEditTime: 2025-11-19 10:30:54
  * @FilePath: \project\work-tool\docs-vitepress\src\build-story\jenkins.md
  * @Description:
 -->
@@ -113,11 +113,11 @@ echo "构建目录: $full_dist_dir"
 echo "部署完成时间: $(date)"
 ```
 
-```md
 ### 第二种构建方法
 
 ## 准备 DockerFile nginx.cof
 
+```md
 #!/bin/bash
 
 # Check the Node.js version
