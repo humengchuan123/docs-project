@@ -2,7 +2,7 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-26 11:20:55
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2025-12-19 12:54:58
+ * @LastEditTime: 2026-02-03 17:44:55
  * @FilePath: \project\work-tool\docs-vitepress\.vitepress\config.mjs
  * @Description: 
  */
@@ -111,6 +111,8 @@ export default defineConfig({
         items: [
           { text: 'go', link: '/src/golang/index' },
           { text: 'gin', link: '/src/golang/gin' },
+          { text: 'goframe', link: '/src/golang/goframe' },
+          { text: 'grpc', link: '/src/golang/grpc' },
         ]
       },
       {
