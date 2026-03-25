@@ -1,3 +1,12 @@
+<!--
+ * @Author: humengchuan 531537052@qq.com
+ * @Date: 2025-12-19 12:50:35
+ * @LastEditors: humengchuan 531537052@qq.com
+ * @LastEditTime: 2026-02-09 20:38:05
+ * @FilePath: \project\work-tool\docs-vitepress\src\golang\gin.md
+ * @Description:
+-->
+
 ### Golang--gin
 
 Go 环境（建议 1.18+）
@@ -39,4 +48,27 @@ func main() {
     // 启动服务器，监听8080端口
     r.Run(":8080")
 }
+```
+
+```go
+// 路由分组
+
+func main() {
+    r := gin.Default()
+    v1 := r.Group("/v1")
+    {
+        v1.GET("/hello", func(c *gin.Context) { })
+        v1.POST("/user", func(c *gin.Context) { })
+        v1.PUT("/user/:id", func(c *gin.Context) { })
+    }
+
+    v2 := r.Group("/v2")
+    {
+        v2.GET("/hello", func(c *gin.Context) { })
+        v2.POST("/user", func(c *gin.Context) { })
+    }
+
+
+}
+
 ```

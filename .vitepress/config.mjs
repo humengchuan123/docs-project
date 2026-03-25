@@ -2,7 +2,7 @@
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-26 11:20:55
  * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2026-02-03 17:44:55
+ * @LastEditTime: 2026-03-25 11:07:04
  * @FilePath: \project\work-tool\docs-vitepress\.vitepress\config.mjs
  * @Description: 
  */
@@ -66,6 +66,7 @@ export default defineConfig({
           { text: '开发学习', link: '/development' },
           { text: 'NodeJS文档', link: '/node-learn' },
           { text: 'CI/CD', link: '/src/build-story/jenkins' },
+          { text: 'AI效率工具', link: '/src/ai-tool' },
         ]
       },
       // { text: '开发学习', link: '/development' },
@@ -113,6 +114,12 @@ export default defineConfig({
           { text: 'gin', link: '/src/golang/gin' },
           { text: 'goframe', link: '/src/golang/goframe' },
           { text: 'grpc', link: '/src/golang/grpc' },
+        ]
+      },
+      {
+        text: 'AI效率工具',
+        items: [
+          { text: 'AI效率工具', link: '/src/ai-tool/index' },
         ]
       },
       {
