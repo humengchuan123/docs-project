@@ -1,9 +1,9 @@
 <!--
  * @Author: humengchuan 531537052@qq.com
  * @Date: 2025-08-28 14:37:16
- * @LastEditors: humengchuan 531537052@qq.com
- * @LastEditTime: 2026-03-25 10:55:27
- * @FilePath: \project\work-tool\docs-vitepress\src\nodejs\mysql.md
+ * @LastEditors: HuMeng 531537052@qq.com
+ * @LastEditTime: 2026-04-28 08:08:29
+ * @FilePath: \work-tool\docs-vitepress\src\nodejs\mysql.md
  * @Description:
 -->
 
@@ -15,7 +15,20 @@ MySQL事务：一致性 原子 隔离 持久
 
 #### 2. 锁
 
-锁类型： 共享锁、排他锁
+锁类型： 共享锁、排他锁、意向锁
+
+- 共享锁（S锁） ：读锁，多个事务可同时持有，互不阻塞
+- 排他锁（X锁） ：写锁，独占，与其他任何锁都互斥
+- 意向锁 ：表级锁，用于快速判断表中是否存在行级锁，避免逐行检查。意向共享锁（IS）和意向排他锁（IX）
+  颗粒度： 行锁、表锁、页锁
+- 行锁 ：粒度最小，并发最高，InnoDB 默认支持
+- 表锁 ：粒度最大，并发最低，MyISAM 使用
+- 页锁 ：锁住一页（B+树节点），介于行锁和表锁之间，BDB 引擎支持
+  乐观锁、悲观锁： 乐观锁是基于版本号或时间戳的锁机制，悲观锁是基于加锁的锁机制。
+  乐观锁：根本不加锁 → 用版本号检测冲突 → "我乐观地认为不会冲突"
+  悲观锁：先加锁再操作 → 锁可以是行锁也可以是表锁 → "我悲观地认为一定会冲突"
+- 悲观锁 + 行锁（最常见： SELECT ... FOR UPDATE ）
+- 悲观锁 + 表锁（ LOCK TABLES ）
 
 #### 3. 索引
 
