@@ -524,7 +524,7 @@ const limiter = rateLimit({
 
 **1. 设置内存大小**
 
-```redis
+```bash
 # redis.conf
 maxmemory 2gb
 maxmemory-policy allkeys-lru

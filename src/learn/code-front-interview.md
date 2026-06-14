@@ -168,11 +168,11 @@ function loggingIdentity<T extends { length: number }>(arg: T): T { ... }
 
 **常见泛型类型**：
 
-- Array<T> 或 T[]
-- Promise<T>
-- Record<K, T>
-- Partial<T>
-- Readonly<T>
+- `Array<T>` 或 T[]
+- `Promise<T>`
+- `Record<K, T>`
+- `Partial<T>`
+- `Readonly<T>`
 
 **应用场景**：函数、类、接口的类型参数化
 

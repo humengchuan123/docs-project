@@ -13,6 +13,7 @@ import { SearchPlugin } from 'vitepress-plugin-search';
 export default defineConfig({
   title: "mengchuanの开发文档",
   description: "A VitePress Site",
+  ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon',  href: '/favicon.ico' }]
   ],

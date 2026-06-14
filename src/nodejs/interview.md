@@ -109,7 +109,7 @@ OSS上传文件功能
 
 ### OSS Web端直传架构图
 
-![OSS Web直传流程](./path/to/your/image.png)
+![OSS Web直传流程](https://example.com/oss-web-direct-upload.png)
 
 **流程说明：**
 

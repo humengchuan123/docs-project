@@ -2,7 +2,7 @@
  * @Author: HuMeng 531537052@qq.com
  * @Date: 2026-05-04 14:21:50
  * @LastEditors: HuMeng 531537052@qq.com
- * @LastEditTime: 2026-05-28 08:52:25
+ * @LastEditTime: 2026-05-31 21:54:15
  * @FilePath: \work-tool\docs-vitepress\src\web3\study.md
  * @Description:
 -->
@@ -10,6 +10,10 @@
 #### web3 学习资料
 
 https://kcno38rbm7bc.feishu.cn/wiki/OQ5lwXujliSOA4khSZjc0jagnYJ?from=from_copylink
+
+这是转型规划路径手册
+👉里面包含了远程社区以及相关转型问题的解决方案：
+https://kcno38rbm7bc.feishu.cn/wiki/HXzgwZZToixuQhkgIyrc53Tznfb
 
 ```md
 ### 干工作最主要的是赚钱，工资
@@ -25,3 +29,5 @@ https://kcno38rbm7bc.feishu.cn/wiki/OQ5lwXujliSOA4khSZjc0jagnYJ?from=from_copyli
 ```
 
 ![alt text](image.png)
+
+web3 开发知识图谱
