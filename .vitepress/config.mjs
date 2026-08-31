@@ -147,7 +147,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present mengchuan | <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2026031211号</a>'
+    }
   },
   plugins: [SearchPlugin()]
 })
